@@ -6,6 +6,7 @@
 Get the meteo, air quality and environmental risks in realtime and update the device status in Domoticz
 ## Prerequisites
 * Make sure that your Domoticz supports Python plugins (https://www.domoticz.com/wiki/Using_Python_plugins)
+* Module Python pytz ```sudo pip3 install pytz```
 ## Installation
 1. Clone repository into your domoticz plugins folder
 ```
