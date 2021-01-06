@@ -7,6 +7,7 @@ Get the meteo, air quality and environmental risks in realtime and update the de
 ## Prerequisites
 * Make sure that your Domoticz supports Python plugins (https://www.domoticz.com/wiki/Using_Python_plugins)
 * Module Python pytz ```sudo pip3 install pytz```
+* Get an API KEY from [Climacell](https://www.climacell.co/pricing/)
 ## Installation
 1. Clone repository into your domoticz plugins folder
 ```
@@ -30,7 +31,7 @@ git clone https://github.com/afer92/domotiz-plugin-climacellV4.git ClimacellV4
 ```
 2. Edit TestCode.py
 ```
-API_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Your api key from Climacell (https://www.climacell.co/pricing/)
+API_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Your api key from Climacell
 LATITUDE = '47.111111' # Your location
 LONGITUDE = '2.222222
 ```
