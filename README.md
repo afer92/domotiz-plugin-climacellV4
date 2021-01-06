@@ -30,7 +30,7 @@ git clone https://github.com/afer92/domotiz-plugin-climacellV4.git ClimacellV4
 ```
 2. Edit TestCode.py
 ```
-API_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Your api key from Climacell
+API_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Your api key from Climacell (https://www.climacell.co/pricing/)
 LATITUDE = '47.111111' # Your location
 LONGITUDE = '2.222222
 ```
