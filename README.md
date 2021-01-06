@@ -11,16 +11,22 @@ Get the meteo, air quality and environmental risks in realtime and update the de
 1. Clone repository into your domoticz plugins folder
 ```
 cd domoticz/plugins
-git clone https://github.com/afer92/domotiz-plugin-climacellV4.git
+git clone https://github.com/afer92/domotiz-plugin-climacellV4.git ClimacellV4
 ```
 2. Restart domoticz
 3. Make sure that "Accept new Hardware Devices" is enabled in Domoticz settings
 4. Go to "Hardware" page and add new item with type "Climacell (Weather Lookup) v4"
+## Plugin update
+
+```
+cd domoticz/plugins/ClimacellV4
+git pull
+```
 ## Testing without Domoticz
 1. Clone repository
 ```
 cd scripts/tests
-git clone https://github.com/afer92/domotiz-plugin-climacellV4.git
+git clone https://github.com/afer92/domotiz-plugin-climacellV4.git ClimacellV4
 ```
 2. Edit TestCode.py
 ```
