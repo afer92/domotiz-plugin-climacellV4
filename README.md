@@ -31,3 +31,19 @@ LONGITUDE = '2.222222
 ```
 python3 plugin.py
 ```
+## pycodestyle
+```
+Climacell_plugin.py:5:1: E265 block comment should start with '# '
+Climacell_plugin.py:7:161: E501 line too long (202 > 160 characters)
+Climacell_plugin.py:41:1: E402 module level import not at top of file
+Climacell_plugin.py:42:1: E402 module level import not at top of file
+Climacell_plugin.py:43:1: E402 module level import not at top of file
+Climacell_plugin.py:44:1: E402 module level import not at top of file
+Climacell_plugin.py:45:1: E402 module level import not at top of file
+Climacell_plugin.py:46:1: E402 module level import not at top of file
+Climacell_plugin.py:47:1: E402 module level import not at top of file
+Climacell_plugin.py:50:1: E402 module level import not at top of file
+Climacell_plugin.py:52:1: E402 module level import not at top of file
+Climacell_plugin.py:53:1: E402 module level import not at top of file
+Climacell_plugin.py:677:17: E722 do not use bare 'except'
+```
