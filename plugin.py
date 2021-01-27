@@ -750,7 +750,7 @@ def DumpConfigToLog():
 
 if __name__ == "__main__":
     from Domoticz import Device
-    from Domoticz import Parameters
+    from TestCode import Parameters
     from TestCode import runtest
     from TestCode import Devices
     from TestCode import Images
