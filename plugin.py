@@ -4,7 +4,7 @@
 #
 #!/usr/bin/python
 """
-<plugin key="Climacell" name="Climacell (Weather Lookup) v4" author="Alain Meunier" version="0.0.2" wikilink="http://www.domoticz.com/wiki/plugins/plugin.html" externallink="https://www.climacell.com/">
+<plugin key="Climacell" name="Climacell (Weather Lookup) v4" author="Alain Meunier" version="0.0.3" wikilink="http://www.domoticz.com/wiki/plugins/plugin.html" externallink="https://www.climacell.com/">
     <description>
     <h2>Plugin Météo Climacell V4</h2><br/>
         Devices will be created in the Devices Tab only and will be made active.<br/><br/>
@@ -52,7 +52,7 @@ import requests
 import json
 import string
 
-API_BASE_REALTIME_URL = 'https://data.climacell.co/v4/timelines?'
+API_BASE_REALTIME_URL = 'https://api.tomorrow.io/v4/timelines?'
 
 thumidity_status = {
         "3": (60, 100),
