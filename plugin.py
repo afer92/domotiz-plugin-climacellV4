@@ -4,7 +4,7 @@
 #
 #!/usr/bin/python
 """
-<plugin key="Climacell" name="Climacell (Weather Lookup) v4" author="Alain Meunier" version="0.0.3" wikilink="http://www.domoticz.com/wiki/plugins/plugin.html" externallink="https://www.climacell.com/">
+<plugin key="Climacell" name="Climacell (Weather Lookup) v4" author="Alain Meunier" version="0.0.4" wikilink="http://www.domoticz.com/wiki/plugins/plugin.html" externallink="https://www.climacell.com/">
     <description>
     <h2>Plugin Météo Climacell V4</h2><br/>
         Devices will be created in the Devices Tab only and will be made active.<br/><br/>
@@ -463,11 +463,18 @@ class BasePlugin:
                 Devices[2].Update(nValue=0, sValue=THB)
 
             # Rain rate
+
+            if 'precipitationIntensity' in FirstInterval.keys():
+                RainRate = str(FirstInterval['precipitationIntensity']*10000)
+            else:
+                RainRate = None
+            '''
             try:
                 RainRate = str(FirstInterval['precipitationIntensity']*10000)
             except Exception as e:
                 self.errorMessage("Climacell Meteo Server not available : " + str(type(e)) + " " + str(e.args) + " found when reading RainRate")
                 break
+            '''
             if RainRate is None:
                 RainRate = OldRainRate
             Rain = RainRate + ";" + str(NewRainTotal)
